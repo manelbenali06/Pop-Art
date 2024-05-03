@@ -65,13 +65,13 @@ h2 {
 
 /* Réduire la taille de la police du titre et du paragraphe */
 .carousel-caption h5 {
-    font-size: 13px; /* Ajuster la taille du titre */
+    font-size: 15px; 
     color: #f8f9fa;
     font-weight: bold;
 }
 
 .carousel-caption p {
-    font-size: 12px; /* Ajuster la taille du paragraphe */
+    font-size: 14px; /* Ajuster la taille du paragraphe */
     margin: 0; /* Supprimer la marge */
     color: #f8f9fa;
 }
