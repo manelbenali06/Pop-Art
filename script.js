@@ -8,3 +8,14 @@
         // Réinitialise le formulaire après l'envoi
         this.reset();
     });
+
+
+// Pagination
+function showPage(page) {
+    const products = document.querySelectorAll('[data-page]');
+    products.forEach(product => {
+        product.style.display = product.getAttribute('data-page') == page ? 'block' : 'none';
+    });
+}
+
+showPage(1); // Affiche la première page par défaut
