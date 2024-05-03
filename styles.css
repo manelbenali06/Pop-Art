@@ -1,0 +1,117 @@
+/* Styles personnalisés pour Pop&Art */
+
+body {
+    font-family: ROBOTTO BLACK  ;
+    background-color: hsla(30, 17%, 98%, 0.774);
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+
+.card {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h2 {
+    
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #c57f1de6;
+    padding-bottom: 10px;
+    font-family: ROBOTTO BLACK;
+}
+
+.carousel-inner img {
+
+    object-fit: cover;
+}
+
+/* Redimensionner le conteneur de légende du carrousel */
+.carousel-caption {
+    max-width: 30%; /* Ajustez ce pourcentage pour définir la taille */
+    background-color: rgba(220, 223, 199, 0.853); /* Garder la couleur de fond */
+    padding: 5px; /* Ajuster le padding pour le réduire si nécessaire */
+    border-radius: 8px; /* Garder les coins arrondis */
+    margin: 0 auto; /* Centrer la légende */
+}
+
+/* Réduire la taille de la police du titre et du paragraphe */
+.carousel-caption h5 {
+    font-size: 13px; /* Ajuster la taille du titre */
+    color: #f8f9fa;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 12px; /* Ajuster la taille du paragraphe */
+    margin: 0; /* Supprimer la marge */
+    color: #f8f9fa;
+}
+
+
+/* Limiter la largeur maximale et centrer les images du carrousel */
+.carousel-inner {
+    text-align: center; /* Centrer les images */
+}
+
+.carousel-inner img {
+    max-width: 800px; /* Ajustez la largeur maximale */
+    height: auto; /* Conserver le ratio d'aspect */
+    margin: 0 auto; /* Centrer horizontalement */
+}
+
+/* formulaire de contact*/
+.contact-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card .bg-primary {
+    border-radius: 10px 0 0 10px;
+}
+
+.contact-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Boutton card*/
+
+
+a.custom-btn {
+    background-color: #c57f1de6; /* couleur orange */
+    color: #fff; /* texte blanc */
+    border: none; /* pas de bordure */
+    padding: 10px ; /* espace de rembourrage */
+    border-radius: 5px; /* coins arrondis */
+    text-decoration: none; /* pas de soulignement */
+}

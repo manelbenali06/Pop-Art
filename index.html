@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pop&Art - Boutique</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- En-tête -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Pop&Art" style="width: 40px;">
+                Pop&Art
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#all-products">Nos Produits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contactez-nous</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section À propos -->
+    <section id="about" class="container my-5">
+        <h2>À Propos de Pop&Art</h2>
+        <p>Pop&Art propose des objets de collection artisanaux inspirés par les mangas, les bandes dessinées, le cinéma et les séries télé. Découvrez nos objets uniques en bois et imprimés en 3D.</p>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Tapez le nom du produit.." aria-label="recherche">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
+          </form>
+    </section>
+    
+    <!-- Section Produits phares (Carrousel) -->
+    <section id="products" class="products container my-5">
+        <h2>Best-seller</h2>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/collier_zelda.jpg" alt="collier_zelda">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Collier Triforce</h5>
+                        <p>The légende of zelda.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/bijoux1.webp" alt="boucle_clips">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Bijou Boucle d’oreilles à Clips</h5>
+                        <p>Broderie Totoro gris - Mon Voisin Tot.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/hello_kitty.webp" alt="hello_kitty">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Boucles d’oreilles à clips Yuki & Lune</h5>
+                        <p>Le Royaume des chats</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/boucle_totoro.webp" alt="boucle_totoro">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Boucles d'roeilles totoro</h5>
+                        <p>film Mon Voisin Totoro.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Précédent</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Suivant</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section Tous les produits -->
+    <section id="all-products" class="container my-5">
+        <h2>Tous les produits disponible</h2>
+        <div class="row">
+            <!-- Produit 1 -->
+            <div class="col-md-4" data-page="1">
+                <div class="card mb-4">
+                    <img src="images/collier_zelda.jpg" class="card-img-top" alt="collier_zelda">
+                    <div class="card-body">
+                        <h5 class="card-title">Collier Triforce</h5>
+                        <p class="card-text">Pendentif Zelda Argent Sterling Anime Bijoux Zelda Cadeaux pour Homme Femme.</p>
+                        <p class="card-text"><strong>Prix:</strong> 40,99 €</p>
+                        <p class="card-text">Exemplaires restants: <span class="availability">10</span></p>
+                        <a href="#contact" class="custom-btn">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 2 -->
+            <div class="col-md-4" data-page="1">
+                <div class="card mb-4">
+                    <img src="images/boucle_totoro.webp" class="card-img-top" alt="boucle_totoro">
+                    <div class="card-body">
+                        <h5 class="card-title">Boucles d'roeilles totoro</h5>
+                        <p class="card-text">Boucles d'oreilles à l'effigie du film Mon Voisin Totoro.Un accessoire élégant à porter tous les jours.</p>
+                        <p class="card-text"><strong>Prix:</strong> 24.90 €</p>
+                        <p class="card-text">Exemplaires restants: <span class="availability">10</span></p>
+                        <a href="#contact" class="custom-btn">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 3 -->
+            <div class="col-md-4" data-page="1">
+                <div class="card mb-4">
+                    <img src="images/broche_totoro.webp" class="card-img-top" alt="broche_totoro">
+                    <div class="card-body" data-quantity="10">
+                        <h5 class="card-title">Broche épingle à nourrice Totoro</h5>
+                        <p class="card-text">Broche épingle à nourrice Totoro & Feuilles - Mon Voisin Totoro.</p>
+                        <p class="card-text"><strong>Prix:</strong> 29,90 €</p>
+                        <p class="card-text">Exemplaires restants: <span class="availability">10</span></p>
+                        <a href="#contact" class="custom-btn">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 4 -->
+            <div class="col-md-4" data-page="2" style="display: none;">
+                <div class="card mb-4">
+                    <img src="images/personnage_zelda2.jpg" class="card-img-top" alt="personnage_zelda2">
+                    <div class="card-body">
+                        <h5 class="card-title"> Lot de 2 Figurines Zelda</h5>
+                        <p class="card-text">Les figurines Link & ZELDA de 11 cm ont chacune 20 points d'art pour une pose maximale.</p>
+                        <p class="card-text"><strong>Prix:</strong> 35 €</p>
+                        <p class="card-text">Exemplaires restants: <span class="availability">10</span></p>
+                        <a href="#contact" class="custom-btn">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 5 -->
+            <div class="col-md-4" data-page="2" style="display: none;">
+                <div class="card mb-4">
+                    <img src="images/perso_zelda.jpg" class="card-img-top" alt="perso_zelda">
+                    <div class="card-body">
+                        <h5 class="card-title">Figurine légende Zelda</h5>
+                        <p class="card-text">The Legend of Zelda: Breath of The Wild: Link Nendoroid Figurine avec Accessoires Boîte De Couleur Dessin Animé Personnage Anime.</p>
+                        <p class="card-text"><strong>Prix:</strong> 23,99 €</p>
+                        <p class="card-text">Exemplaires restants: <span class="availability">10</span></p>
+                        <a href="#contact" class="custom-btn">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 6 -->
+            <div class="col-md-4" data-page="2" style="display: none;">
+                <div class="card mb-4">
+                    <img src="images/personnage_zelda.jpg" class="card-img-top" alt="personnage_zelda">
+                    <div class="card-body">
+                        <h5 class="card-title">Personnages de la légende de Zelda</h5>
+                        <p class="card-text">Figurine 10cm / 3,9 Pouces Action Figurine PVC Anime Jeu Figurine modèle poupée Jouet Collection Ornement.</p>
+                        <p class="card-text"><strong>Prix:</strong> 45 €</p>
+                        <p class="card-text">Exemplaires restants: <span class="availability">10</span></p>
+                        <a href="#contact" class="custom-btn">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 7 -->
+            <div class="col-md-4" data-page="3" style="display: none;">
+                <div class="card mb-4">
+                    <img src="images/arbre.webp" class="card-img-top" alt="arbre_totoro">
+                    <div class="card-body">
+                        <h5 class="card-title">Arbre à Bijoux Totoro - Mon Voisin Totoro </h5>
+                        <p class="card-text">Arbre à bijoux Totoro. Vous pouvez également vous en servir pour y accrocher vos clés.</p>
+                        <p class="card-text"><strong>Prix:</strong> 59,90 €</p>
+                        <p class="card-text">Exemplaires restants: <span class="availability">10</span></p>
+                        <a href="#contact" class="custom-btn">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 8 -->
+            <div class="col-md-4" data-page="3" style="display: none;">
+                <div class="card mb-4">
+                    <img src="images/secret_totoro.webp" class="card-img-top" alt="boite_secret_totoro">
+                    <div class="card-body">
+                        <h5 class="card-title">Boîte à Bijoux Totoro Trompette</h5>
+                        <p class="card-text">Boite à bijoux pratique pour y ranger vos petit bijoux, des clés et tout autre petits objets.</p>
+                        <p class="card-text"><strong>Prix:</strong> 50 €</p>
+                        <p class="card-text">Exemplaires restants: <span class="availability">10</span></p>
+                        <a href="#contact" class="custom-btn">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 9 -->
+            <div class="col-md-4" data-page="3" style="display: none;">
+                <div class="card mb-4">
+                    <img src="images/chhiro.webp" class="card-img-top" alt="figurine_yububa">
+                    <div class="card-body">
+                        <h5 class="card-title">Figurine pot à crayon Yubaba tricote</h5>
+                        <p class="card-text">Une magnifique figurine que vous pouvez utiliser comme une décoration et un rangement.Un objet parfait pour votre bureau.</p>
+                        <p class="card-text"><strong>Prix:</strong> 40 €</p>
+                        <p class="card-text">Exemplaires restants: <span class="availability">10</span></p>
+                        <a href="#contact" class="custom-btn">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 10 -->
+            <div class="col-md-4" data-page="4" style="display: none;">
+                <div class="card mb-4">
+                    <img src="images/status1.webp" class="card-img-top" alt="statuettes_totoro">
+                    <div class="card-body">
+                        <h5 class="card-title">Trois Statuettes Totoro Shigaraki </h5>
+                        <p class="card-text">Set de 3 statues Totoro Shigaraki. La poterie Shigaraki est faite main au Japon et cuite dans des fours traditionnels.</p>
+                        <p class="card-text"><strong>Prix:</strong> 69,90 €</p>
+                        <p class="card-text">Exemplaires restants: <span class="availability">10</span></p>
+                        <a href="#contact" class="custom-btn">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 11 -->
+            <div class="col-md-4" data-page="4" style="display: none;">
+                <div class="card mb-4">
+                    <img src="images/status2.webp" class="card-img-top" alt="figurine_chateau">
+                    <div class="card-body">
+                        <h5 class="card-title">Figurine mécanique Château ambulant</h5>
+                        <p class="card-text">Retrouvez cette statue mécanique reproduisant les mouvements irréguliers et incohérents du Château Ambulant.</p>
+                        <p class="card-text"><strong>Prix:</strong> 55 €</p>
+                        <p class="card-text">Exemplaires restants: <span class="availability">10</span></p>
+                        <a href="#contact" class="custom-btn">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 12 -->
+            <div class="col-md-4" data-page="4" style="display: none;">
+                <div class="card mb-4">
+                    <img src="images/status3.webp" class="card-img-top" alt="statuette_shigakari">
+                    <div class="card-body">
+                        <h5 class="card-title">Statuette No Face Shigaraki</h5>
+                        <p class="card-text">Statuette No Face fabriquée au Japon dans un four traditionnel.Couleur carbonisée grâce à la cuisson au four.</p>
+                        <p class="card-text"><strong>Prix:</strong> 49 €</p>
+                        <p class="card-text">Exemplaires restants: <span class="availability">10</span></p>
+                        <a href="#contact" class="custom-btn">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pagination -->
+        <nav>
+            <ul class="pagination justify-content-center">
+                <li class="page-item" onclick="showPage(1)"><a class="page-link" href="#all-products">1</a></li>
+                <li class="page-item" onclick="showPage(2)"><a class="page-link" href="#all-products">2</a></li>
+                <li class="page-item" onclick="showPage(3)"><a class="page-link" href="#all-products">3</a></li>
+                <li class="page-item" onclick="showPage(4)"><a class="page-link" href="#all-products">4</a></li>
+            </ul>
+        </nav>
+    </section>
+    <!-- Modale pour l'image agrandie -->
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Image Agrandie</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="" alt="Image Agrandie" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Section Formulaire de Contact -->
+     <section id="contact" class="container my-5">
+        <h2>Contactez-nous</h2>
+        <div class="custom-contact-wrapper">
+            <div class="row no-gutters">
+                <div class="col-md-4 d-flex align-items-center justify-content-center bg-white p-4 custom-logo-wrapper">
+                    <img src="images/logo.png" alt="Logo" class="img-fluid">
+                </div>
+                <div class="col-md-8 p-4 custom-form-wrapper">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom & Prénom:</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Numéro de téléphone:</label>
+                            <input type="tel" id="phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="product">Produit:</label>
+                            <select id="product" class="form-control">
+                                <option value="boucle_totoro">Boucles d'roeilles totoro</option>
+                                <option value="collier_zelda">Collier Triforce</option>
+                                <option value="boucle_clips">Bijou Boucle d’oreilles à Clips</option>
+                                <option value="broche_totoro">Broche épingle à nourrice Totoro</option>
+                                <option value="personnage_zelda2">Lot de 2 Figurines Zelda</option>
+                                <option value="personnage_zelda">Personnages de la légende de Zelda</option>
+                                <option value="arbre_totoro">Arbre à Bijoux Totoro</option>
+                                <option value="boite_secret_totoro">Boîte à Bijoux Totoro Trompette</option>
+                                <option value="figurine_yububa">Figurine pot à crayon Yubaba tricote</option>
+                                <option value="statuettes_totoro">Statuette No Face Shigaraki</option>
+                                <option value="figurine_chateau">Figurine mécanique Château ambulant</option>
+                                <option value="hello_kitty">Boucles d’oreilles à clips Yuki & Lune</option>
+                                <option value="perso_zelda">Figurine légende zelda</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" class="form-control" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Commander</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pied de page -->
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>©2024 Pop&Art. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js" defer></script>
+    
+</body>
+
+</html>
